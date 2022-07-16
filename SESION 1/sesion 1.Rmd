@@ -1,0 +1,77 @@
+
+Arithmetic with R
+
+```{r}
+
+5+5-3 
+10-2 
+3*5 
+(5+5)/2 
+28%%6
+```
+Variables assignment
+```{r}
+x <- 10
+x
+y = 9
+x+y
+result <- x-y
+result
+```
+Basic Data types in R
+```{r}
+my_numeric <- 423
+my_character <- "hellow"
+my_logical <- FALSE
+
+# get data type
+class(my_numeric)
+class(my_character)
+class(my_logical)
+
+```
+create a vector
+```{r}
+numeric_vector <- c(1,10,49)
+numeric_vector
+character_vector <- c ("a","b","c")
+boolean_vector <- c (TRUE, FALSE, TRUE)
+
+POCKER_VECTOR <- c(140,-50,-20,-120,240)
+ROULETTE_VECTOR <- c(-24,-50,10,350,10)
+
+POCKER_VECTOR
+
+
+```
+Naming vector
+
+```{r}
+names(POCKER_VECTOR)<- c("monday", "tuesday", "wednesday", "thursdat", "friday")
+days<- c("monday", "tuesday", "wednesday", "thursdat", "friday")
+
+names(POCKER_VECTOR)<- days
+
+POCKER_VECTOR
+```
+
+Selection by comparison
+
+```{r}
+age<- 17
+
+age >= 18
+
+selection_vector <- POCKER_VECTOR > 0 
+# selecion vecto base on other vecto
+pocker_winning_days <- POCKER_VECTOR[selection_vector]
+pocker_winning_days
+```
+calculating
+x_vector <-c(4,7,9)
+y_vector <-c(12,45,78)
+
+r_vector <- x_vector +y_vector
+r_vector
+
+
